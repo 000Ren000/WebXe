@@ -6,7 +6,7 @@ import {Foods} from '../utils/utils';
 
 export const PageCalcProduct = () => {
   const [form, setForm] = useState({
-    carbohydrates: '', // Угливоды
+    carbohydrates: '73.8', // Угливоды
     dryWeight: '', // Вес сухого продукта
     finishedProductWeight: '' // Вес готового продукта
   });
@@ -78,6 +78,7 @@ export const PageCalcProduct = () => {
           placeholder="Углеводы в 100г"
           onChange={changeForm}
           name="carbohydrates"
+          value={form.carbohydrates}
         />
         <select id="foodsList" className="form__list" onChangeCapture={changeSelectValue}>
           {
@@ -90,10 +91,10 @@ export const PageCalcProduct = () => {
         </div>
 
         <div className="form__button-container_m">
-          <input type="submit" className="form__button_mini" value="2 ед" onClick={(e) => handleSubmit(e, 2)}/>
-          <input type="submit" className="form__button_mini" value="3 ед" onClick={(e) => handleSubmit(e, 3)}/>
-          <input type="submit" className="form__button_mini" value="4 ед" onClick={(e) => handleSubmit(e, 4)}/>
-          <input type="submit" className="form__button_mini" value="5 ед" onClick={(e) => handleSubmit(e, 5)}/>
+          <input type="submit" className="form__button_mini" value="2 ед" onClick={(e) => handleSubmit(e, 1)}/>
+          <input type="submit" className="form__button_mini" value="3 ед" onClick={(e) => handleSubmit(e, 2)}/>
+          <input type="submit" className="form__button_mini" value="4 ед" onClick={(e) => handleSubmit(e, 3)}/>
+          <input type="submit" className="form__button_mini" value="5 ед" onClick={(e) => handleSubmit(e, 4)}/>
         </div>
       </div>
       <span className="form__result">{ins} гр</span>
