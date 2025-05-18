@@ -1,11 +1,13 @@
-@import "./fonts/SFProDisplay/stylesheet.css";
+@import './fonts/SFProDisplay/stylesheet.css';
+@import "tailwindcss";
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(#424C6C, #4F5976);
+  background: linear-gradient(#424c6c, #4f5976);
   font-family: SF Pro Display, sans-serif;
   color: #7a89a1;
   margin: 0 auto;
